@@ -1,0 +1,14 @@
+[
+    {
+        "tittle":"What is context api",
+        "text":"Context api is a tool which provides a way to pass data through the component tree without having to pass props down manually at every level. It help us to manage an use data freely. It reduce the use of props and make a simple clean code for us. We can reuse the same data and update our react components easily ."
+    },
+    {
+        "tittle":"What is Sementic Tags/Elements",
+        "text":"A semantic elements is a tag which have special meaning for example from , article tags are semantic tag. We use this tag and it have some special meaning. On the other hand div,span is not sementic because they have no special meaning in Browser"
+    },
+    {
+        "tittle":"Inline vs Inline-Block",
+        "text":"The main or major difference is tha inline-block allows you to set width and height on the element. If you have some inline element you can't set height width and some margin and padding but if you change the display property with inline-block you can easily apply block element property in inline level element"
+    }
+]

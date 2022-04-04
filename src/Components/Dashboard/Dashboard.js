@@ -42,23 +42,25 @@ const Dashboard = () => {
     ]
     return (
        <div className='grid grid-cols-1 pl-2  md:grid-cols-2 gap-4 overflow-x-hidden '>
-         <div className=' bg-white shadow-md relative  '>
+         <div className=' bg-white shadow-md relative overflow-x-hidden  '>
          <ResponsiveContainer  height={400}>
         <LineChart
           data={data}
           
           margin={{
             top: 5,
+            left:20,
+            right:30,
             bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <Legend />
+          <Legend verticalAlign='top' />
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
          
-          <Line type="monotone" dataKey="sell" stroke="#82ca9d" />
+          <Line type="monotone" name='Total Sell' dataKey="sell" stroke="#82ca9d" />
         </LineChart>
      </ResponsiveContainer>
          </div>
@@ -78,15 +80,15 @@ const Dashboard = () => {
       <XAxis dataKey="month" />
       <YAxis />
       <Tooltip />
-      <Legend />
-      <Bar dataKey="revenue" fill="#8884d8" />
+      <Legend verticalAlign='top'/>
+      <Bar dataKey="revenue" name='Total Revenue ' fill="#8884d8" />
      
     </BarChart>
     </ResponsiveContainer>
          
          </div>
          {/* Charter chart */}
-         <div className=' bg-white shadow-md '>
+         <div className=' bg-white shadow-md overflow-x-hidden '>
          <ResponsiveContainer width="100%" height={400}>
          <ScatterChart
       data={data}
@@ -114,7 +116,9 @@ const Dashboard = () => {
             <PieChart width={400} height={400}>
           <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
           <Pie data={data} dataKey="sell" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+          <Tooltip/>
         </PieChart>
+       
             </ResponsiveContainer>
          </div>
        </div>
