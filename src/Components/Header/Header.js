@@ -9,9 +9,9 @@ const Header = () => {
        
        <div className=''>
           {/* nav section */}
-          <div className={`duration-500 h-screen bg-blue-700 relative slider ${slide?'w-20':'w-52'} sticky top-0 left-0`}>
+          <div className={`duration-500 h-screen bg-blue-700 relative slider  ${slide?'md:w-20 w-[60px]':'w-52'} sticky top-0 left-0`}>
            {/* slider btn */}
-          <img src="./assets/control.png" className={` absolute cursor-pointer top-6 -right-4 duration-500 ${slide?'rotate-180':'rotate-0'}`} onClick={()=>{
+          <img src="./assets/control.png" className={` hidden md:block absolute cursor-pointer top-6 -right-4 duration-500 ${slide?'rotate-180':'rotate-0'}`} onClick={()=>{
               setSlide(!slide)
           }} />
 

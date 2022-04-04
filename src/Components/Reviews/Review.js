@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactStars from "react-rating-stars-component";
 
 const Review = ({name,rating,img,text}) => {
     return (
@@ -14,7 +15,11 @@ const Review = ({name,rating,img,text}) => {
                     {text.length<=2?"NO TEXT":text}
                 </div>
                 <div>
-                    Ratings: <span>{rating}</span>
+                    Ratings:<ReactStars
+                        size= {30}
+                         value={rating}
+                        edit={false}
+                    ></ReactStars> 
                 </div>
             </div>
         </div>
