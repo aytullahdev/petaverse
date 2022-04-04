@@ -6,9 +6,9 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 function App() {
   return (
-    <div className="App flex">
+    <div className="App flex relative">
     <Header/>
-    <div className='p-2 w-full overflow-y-hidden h-screen bg-gray-200'>
+    <div className='p-2 w-full overflow-y-hidden  bg-gray-200'>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
