@@ -3,7 +3,7 @@ import Review from './Review';
 
 
 const Reviews = ({len}) => {
-    const [data,setData] = useReviews('./Data/review.json');
+    const [data] = useReviews('./Data/review.json');
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         {/* we have to fixed this later */}
