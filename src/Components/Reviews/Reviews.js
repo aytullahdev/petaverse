@@ -11,13 +11,15 @@ const Reviews = ({len}) => {
     }, [])
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        {/* we have to fixed this later */}
            {data.length && data.slice(0,len).map(el=>{return(<Review key={el.id} name={el.author} img={el.download_url} rating={el.rating} text={el.text}/>)})}
         </div>
     );
-    Reviews.defaultProps={
-        len:data.length(),
-    }
+   
    
 };
+Reviews.defaultProps={
+    len:10,
+}
 
 export default Reviews;
