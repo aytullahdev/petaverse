@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App flex">
     <Header/>
-    <div className='p-7 w-full h-screen bg-gray-200'>
+    <div className='p-2 w-full overflow-y-hidden h-screen bg-gray-200'>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
